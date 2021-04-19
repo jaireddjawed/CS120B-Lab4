@@ -44,7 +44,7 @@ void SM_Tick() {
 			}
 			break;
 		case B1Release:
-			if ((PINA & 0x01) == 0x00) {
+			if ((PINA & 0x01) == 0x01) {
 				state = B0Press;
 			}
 			else {
@@ -78,7 +78,7 @@ int main(void) {
     DDRA = 0x00; PORTA = 0xFF;
     DDRB = 0xFF; PORTB = 0x00;
 
-    state = Start;
+//    state = Start;
 
     /* Insert your solution below */
     while (1) {

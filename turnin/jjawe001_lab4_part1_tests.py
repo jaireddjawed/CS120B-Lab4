@@ -41,11 +41,11 @@ tests = [
     {
         'description': 'Push A0 three times. B1 = 1.',
         'steps': [
-            { 'inputs': [('PINA', 0x01)], 'iterations': 2 },
             { 'inputs': [('PINA', 0x00)], 'iterations': 2 },
             { 'inputs': [('PINA', 0x01)], 'iterations': 2 },
             { 'inputs': [('PINA', 0x01)], 'iterations': 2 },
-            { 'inputs': [('PINA', 0x01)], 'iterations': 2 },
+            { 'inputs': [('PINA', 0x00)], 'iterations': 2 },
+         #   { 'inputs': [('PINA', 0x01)], 'iterations': 2 },
         ],
         'expected': [('PORTB', 0x02)]
     },
